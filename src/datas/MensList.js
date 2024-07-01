@@ -2,7 +2,7 @@ const mensProducts =  [
     {
         "id": 1,
         "title": "Handcrafted Concrete Hat",
-        "price": 22,
+        "price": 33,
         "description": "The Football Is Good For Training And Recreational Purposes",
         "image": [
             "https://i.imgur.com/QkIa5tT.jpeg",
