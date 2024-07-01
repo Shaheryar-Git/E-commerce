@@ -129,7 +129,7 @@ const Checkout = () => {
       // </div>
       <div>
       <div>
-        <h1 className="text-center">Easyshop Checkout-List</h1>
+        <h1 className="text-center">only Checkout-List</h1>
         <hr />
        
           <div className="container mx-auto">
