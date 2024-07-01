@@ -3,7 +3,7 @@ const mobileLists = [
     id: 29,
     title: "Galaxy-S24-Ultra",
     description: "An apple mobile which is nothing like apple",
-    price: 549,
+    price: 849,
     image: [
       "/Assets/Galaxy-S24-Ultra-review-42.jpg",
   ],
