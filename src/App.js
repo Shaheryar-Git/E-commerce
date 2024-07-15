@@ -13,6 +13,7 @@ import Login from "./components/Login";
 import Checkout from "./components/Checkout";
 import MainHome from "./components/MainHome"; 
 import Shoes from "./components/Shoes";
+import ReactCom from "./components/ReactCom";
 
 
 
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+        {/* <Route path="/react" element={<ReactCom text={{name:"SHERRY",AGE:"20" }} data={"shaheryar data"} />} /> */}
           <Route path="/" element={<MainHome />} />
           <Route path="/sign" element={<Sign />} />
           <Route path="/login" element={<Login />} />

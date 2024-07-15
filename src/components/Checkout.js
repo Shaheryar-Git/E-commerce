@@ -10,10 +10,10 @@ const Checkout = () => {
   const [quantities, setQuantities] = useState(1);
 
   const IncreaseP = (id) => {
-    setQuantities((preQuantities) => ({
+    setQuantities((preQuantities)=>({
       ...preQuantities,
-      [id]: (preQuantities[id] || 1) + 1,
-    }));
+      [id] : (preQuantities[id]||1)+1
+    }))
   };
 
   const DecreaseP = (id) => {
@@ -32,8 +32,8 @@ const Checkout = () => {
     return Quantity * ele.price;
   };
 
-  const subtotal = cartsData.reduce(
-    (acc, ele) => acc + calculateTotalPrice(ele, quantities[ele.id] || 1),
+  const subtotal = cartsData.reduce((acc, ele) =>
+      acc + calculateTotalPrice(ele, quantities[ele.id] || 1),
     0
   );
 
@@ -68,72 +68,19 @@ const Checkout = () => {
     });
   };
 
-  const Checkout = () =>{
+  const Checkout = () => {
     navigate("/sign");
     window.location.reload(true);
-  }
+  };
 
   return (
-      // <div className="container w-75 mt-5 checkout-container mx-auto">
-      //   <h2 className="mb-4 text-center">Checkout-List</h2>
-      //   <table className="table table-bordered text-center">
-      //     <thead>
-      //       <tr>
-      //         <th className="bg-dark text-white">Sr No #</th>
-      //         <th className="bg-dark text-white">Name</th>
-      //         <th className="bg-dark text-white ">Quantity</th>
-      //         <th className="bg-dark text-white ">Price</th>
-      //         <th className="bg-dark text-white">Total Price</th>
-      //         <th className="bg-dark text-white">Action</th>
-      //       </tr>
-      //     </thead>
-      //     <tbody className="fs-4 " >
-      //       {cartsData.map((ele, index) => (
-      //         <tr key={index + 1}>
-      //           <td>{index + 1}</td>
-      //           <td>{ele.title.slice(0, 30)}</td>
-      //           <td>
-      //             <button
-      //               className="btn btn-sm fs-5"
-      //               onClick={() => DecreaseP(ele.id)}
-      //             >
-      //               -
-      //             </button>
-      //             <h7 className="fs-5">{quantities[ele.id] || 1}</h7>
-      //             <button
-      //               className="btn btn-sm fs-5"
-      //               onClick={() => IncreaseP(ele.id)}
-      //             >
-      //               +
-      //             </button>
-      //           </td>
-      //           <td>$ {ele.price}</td>
-      //           <td>$ {calculateTotalPrice(ele, quantities[ele.id] || 1)}</td>
-      //           <button
-      //             className="btn btn-danger"
-      //             onClick={() => DELETE(ele.id)}
-      //           >
-      //             <i className="fa-sharp fa-solid fa-trash fs-3"></i>
-      //           </button>
-      //         </tr>
-      //       ))}
-      //     </tbody>
-      //   </table>
-      //   <div className="text-center mt-5">
-      //     <h3 className="fw-bold">Subtotal: ${subtotal}</h3>
-      //     <a href="/home" className="btn btn-primary mt-3">
-      //       Checkout
-      //     </a>
-      //     <h1 className="mt-3">THANKS FOR ORDERING</h1>
-      //   </div>
-      // </div>
-      <div>
+    <div>
       <div>
         <h1 className="text-center">Easyshop Checkout-List</h1>
         <hr />
-       
-          <div className="container mx-auto">
-          <div className="row1 row "> 
+
+        <div className="container mx-auto">
+          <div className="row1 row ">
             <div className="col-xl-8 mt-5 mx-auto">
               {cartsData.map((ele) => (
                 <div className="card shadow-lg mb-3 ">
@@ -173,7 +120,7 @@ const Checkout = () => {
                           <div className="mt-3">
                             <p className="fw-bolder mb-2 ms-3">Price</p>
                             <h5 className="mb-0 mt-2">
-                              <span className="text-muted me-2"></span>$ 
+                              <span className="text-muted me-2"></span>$
                               {ele.price}
                             </h5>
                           </div>
@@ -200,7 +147,11 @@ const Checkout = () => {
                           <div className="mt-3">
                             <p className="fw-bolder mb-2">Total</p>
                             <h5>
-                              ${calculateTotalPrice(ele,quantities[ele.id] || 1)}
+                              $
+                              {calculateTotalPrice(
+                                ele,
+                                quantities[ele.id] || 1
+                              )}
                             </h5>
                           </div>
                         </div>
@@ -209,7 +160,7 @@ const Checkout = () => {
                   </div>
                 </div>
               ))}
-              
+
               <div className=" d-flex justify-content-center">
                 <div className="col-xl-4 mt-auto">
                   <div className="mt-5 mt-lg-0">
@@ -247,10 +198,8 @@ const Checkout = () => {
             </div>
           </div>
         </div>
-        
       </div>
     </div>
-    
   );
 };
 
