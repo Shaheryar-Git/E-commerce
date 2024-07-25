@@ -12,24 +12,24 @@ const MainHome = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoaders(false);
-    }, 2000);
+    },2000);
     Aos.init();
     Aos.refresh();
   }, []);
 
-  // if (loaders) {
-  //   return (
-  //     <ClipLoader
-  //       className="text-center fw-bolder"
-  //       color={"#ef0e0e"}
-  //       loading={loaders}
-  //       cssOverride={300}
-  //       size={100}
-  //       aria-label="Loading Spinner"
-  //       data-testid="loader"
-  //     />
-  //   );
-  // }
+  if (loaders) {
+    return (
+      <ClipLoader
+        className="text-center fw-bolder"
+        color={"#ef0e0e"}
+        loading={loaders}
+        cssOverride={300}
+        size={100}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+    );
+  }
 
   return (
     <div>
@@ -47,7 +47,7 @@ const MainHome = () => {
       </div>
       {/* ///////////////////////////// */}
       <h1>Categories</h1>
-      <div className="Container  my-5">
+      <div className="Container1  my-5">
         <div className="row">
           {/* //////Mens////// */}
           <div className="col-lg-4 col-md-12 col-sm-12">

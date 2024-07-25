@@ -333,18 +333,45 @@ button:hover {
 }
 
 /* medium size 992 pixels  */
-@media (min-width : 992px) {
-  .text1{
-    height: 1200px;
-    /* font-weight: 400; */
-  }
-  .banner{
-    height: 1800px;
-    width: 120%;
-
+/* @media (max-width: 992px) {
+  .menscard, .womencard, .shoescard, .mobilecard, .electroniccard, .labtopscard {
+    margin: 0 auto; 
+    height: auto; 
+    width: 90%; 
+    padding: 20px; 
+    bottom: auto; 
   }
 
-}
+  
+  .menscard {
+    right: 23%; 
+    bottom: 35px;
+  }
+
+  .womencard {
+   
+    
+  }
+
+  .shoescard {
+    left: 30%; 
+    top: 35px;
+  }
+
+  .mobilecard {
+    right: 1%; 
+    top: 35px;
+  }
+
+  .electroniccard {
+    left: 29%; 
+    top: 85px;
+  }
+
+  .labtopscard {
+    right: 23%;
+  }
+} */
 
 /* Small size 992 pixels  */
 @media (min-width : 1200px) {

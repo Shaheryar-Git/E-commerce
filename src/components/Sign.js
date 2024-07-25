@@ -24,6 +24,23 @@ const Sign = () => {
     }, 1000);
   }, []);
 
+
+  useEffect(()=>{
+    let isLogIn = localStorage.getItem("sign")
+    if (isLogIn) {
+      toast.success('Thanks For LogIn',{
+        position: "top-center",
+        autoClose: 2000, // Auto-close the notification after 3 seconds
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        className:"text-center fw-bolder"
+    });
+        navigate("/mens")
+    }
+   })
+
   if (loaders) {
     return (
       <ClipLoader
@@ -38,55 +55,58 @@ const Sign = () => {
     );
   }
 
-  const SUBMIT = async (e) => {
-    e.preventDefault();
-    if (
-      !name ||
-      !email ||
-      !password ||
-      !phone ||
-      !city ||
-      !location ||
-      !address
-    ) {
-      alert("ALL INFORMATION ARE REQUIRED");
-      return;
-    }
+  
+  
+ 
+   const SUBMIT = ()=> {
+    localStorage.setItem("sign",true)
+    navigate("/")
+  }
 
-    try {
-      let result = await fetch("http://localhost:2000/signIn", {
-        method: "post",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          password,
-          phone,
-          city,
-          location,
-          address,
-        }),
-      });
+  
 
-      if (result.ok) {
-        toast.success("Thanks For Ordering", {
-          position: "top-center",
-          autoClose: 2000, // Auto-close the notification after 3 seconds
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          className: "text-center",
-        });
-      }
-      result = await result.json();
-      navigate("/");
-    } catch (error) {
-      console.log(error);
-    }
-  };
+
+  // const SUBMIT = async (e) => {
+  //   e.preventDefault();
+  //   if (
+  //     !name ||
+  //     !email ||
+  //     !password ||
+  //     !phone ||
+  //     !city ||
+  //     !location ||
+  //     !address
+  //   ) {
+  //     alert("ALL INFORMATION ARE REQUIRED");
+  //     return;
+  //   }
+
+  //   try {
+  //     let result = await fetch("http://localhost:2000/signIn", {
+  //       method: "post",
+  //       headers: {
+  //         "content-type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         name,
+  //         email,
+  //         password,
+  //         phone,
+  //         city,
+  //         location,
+  //         address,
+  //       }),
+  //     });
+
+  //     if (result.ok) {
+  //      navigate("/mens")
+  //     }
+  //     result = await result.json();
+  //     navigate("/");
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   return (
     <div
@@ -222,7 +242,7 @@ const Sign = () => {
 
         <br />
         <button className="btn btn-success text-center " onClick={SUBMIT}>
-          SUBMIT
+           
         </button>
       </form>
       <br />
