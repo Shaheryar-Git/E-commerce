@@ -17,19 +17,19 @@ const MainHome = () => {
     Aos.refresh();
   }, []);
 
-  if (loaders) {
-    return (
-      <ClipLoader
-        className="text-center fw-bolder"
-        color={"#ef0e0e"}
-        loading={loaders}
-        cssOverride={300}
-        size={100}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
-    );
-  }
+  // if (loaders) {
+  //   return (
+  //     <ClipLoader
+  //       className="text-center fw-bolder"
+  //       color={"#ef0e0e"}
+  //       loading={loaders}
+  //       cssOverride={300}
+  //       size={100}
+  //       aria-label="Loading Spinner"
+  //       data-testid="loader"
+  //     />
+  //   );
+  // }
 
   return (
     <div>
@@ -48,12 +48,12 @@ const MainHome = () => {
       {/* ///////////////////////////// */}
       <h1>Categories</h1>
       <div className="Container1  my-5">
-        <div className="row">
+        <div  className="row">
           {/* //////Mens////// */}
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="row ">
               <div className="col-12 " data-aos="fade-out">
-                <div className="menscard card mx-auto me-5" style={{ width: "20rem" }}>
+                <div className="menscard card mx-auto mt-5 " style={{ width: "20rem" }}>
                   <img
                     src="/Assets/images (6).jpg"
                     className="card-img-top "
@@ -82,7 +82,7 @@ const MainHome = () => {
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="row">
               <div className="col-12" data-aos="fade-out">
-                <div className="womencard  card mx-auto" style={{ width: "20rem" }}>
+                <div className="womencard  card mx-auto  mt-5" style={{ width: "20rem" }}>
                   <img
                     src="/Assets/images (7).jpg"
                     className="card-img-top"
@@ -113,7 +113,7 @@ const MainHome = () => {
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="row">
               <div className="col-12" data-aos="fade-out">
-                <div className="shoescard card " style={{ width: "20rem" }}>
+                <div className="shoescard card mx-auto mt-5  " style={{ width: "20rem" }}>
                   <img
                     src="/Assets/7-best-sneakers-for-men-under-2000-for-ultimate-comfort-and-style.webp"
                     className="card-img-top"
@@ -141,12 +141,12 @@ const MainHome = () => {
       </div>
       {/* /////////END////////// */}
       {/* //////tech and mobiles */}
-      <div className="Container  my-5">
+      <div className="Container2  my-5">
         <div className="row">
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="row ">
               <div className="col-12 " data-aos="fade-out">
-                <div className="labtopscard card mx-auto me-5 mt-3" style={{ width: "20rem" }}>
+                <div className="labtopscard card mx-auto  mt-3" style={{ width: "20rem" }}>
                   <img
                     src="/Assets/laptop-computer-repair-technician-mobile-phones-png-favpng-eMpZBrmYDVzzYihtPNy5kt0xX.jpg"
                     className="card-img-top "
@@ -174,7 +174,7 @@ const MainHome = () => {
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="row">
               <div className="col-12" data-aos="fade-out">
-                <div className="mobilecard card mx-auto mt-3" style={{ width: "20rem" }}>
+                <div className="mobilecard card mx-auto mt-5" style={{ width: "20rem" }}>
                   <img
                     src="/Assets/smartphone-balancing-with-pink-background_23-2150271746.avif"
                     className="card-img-top"
@@ -206,7 +206,7 @@ const MainHome = () => {
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="row">
               <div className="col-12" data-aos="fade-out">
-                <div className="electroniccard card" style={{ width: "20rem" }}>
+                <div className="electroniccard card mx-auto mt-5" style={{ width: "20rem" }}>
                   <img
                     src="/Assets/image.jpg"
                     className="card-img-top"

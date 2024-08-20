@@ -252,151 +252,88 @@ button:hover {
 
 
 /* small size 576 pixels  */
-/* @media (max-width: 767px) {
-  .carousel-item img {
-    height: auto;
+@media (max-width: 767px) {
+ 
+  .Container1 {
+    margin-top: 0;
+    padding: 0 10px;
   }
 
-  .card {
-    margin: 0 auto;
+  .col-lg-4,
+  .col-md-12,
+  .col-sm-12 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .card img {
-    height: 300px;
+  .menscard,
+  .womencard,
+  .shoescard {
+    width: 100% !important;
+    margin: 0 auto 20px auto; /* Center the cards and add space between them */
   }
 
   .card-body {
-    padding: 1rem;
+    text-align: center;
   }
 
   .card-title {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Adjust font size */
   }
 
   .card-text {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust font size */
   }
 
   .btn {
+    width: 100%; /* Make the button full-width */
+    margin-top: 10px;
+  }
+
+
+}
+
+
+@media (max-width: 576px) {
+  .Container1 {
+    margin-top: 0;
+    padding: 0 10px;
+  }
+
+  .col-lg-4,
+  .col-md-12,
+  .col-sm-12 {
     width: 100%;
-  }
-} */
-
-@media  (max-width : 576px) {
-  .menscard{
-    left: 6%;
-    height: 200px;
-    width: 10%;
-    padding: 10px;
-    bottom: 40px;
-  }
-  .womencard{
-    right: 2px;
-    top: 3%;
-    height: 200px;
-    width: 10%;
-    padding: 10px;
-    bottom: 10px;
-  }
-  .shoescard{
-    left: 6%;
-    top: 10%;
-    height: 200px;
-    width: 10%;
-    padding: 10px;
-    bottom: 10px;
-  }
-  .labtopscard{
-    left: 6%;
-    top: 3%;
-    height: 200px;
-    width: 10%;
-    padding: 10px;
-    bottom: 10px;
-  }
-  .mobilecard{
-    /* left: 1%; */
-    top: 6%;
-    height: 200px;
-    width: 10%;
-    padding: 10px;
-    bottom: 10px;
-  }
-  .electroniccard{
-    left: 6%;
-    top: 10%;
-    height: 200px;
-    width: 10%;
-    padding: 10px;
-    bottom: 10px;
-  }
-}
-
-/* medium size 992 pixels  */
-/* @media (max-width: 992px) {
-  .menscard, .womencard, .shoescard, .mobilecard, .electroniccard, .labtopscard {
-    margin: 0 auto; 
-    height: auto; 
-    width: 90%; 
-    padding: 20px; 
-    bottom: auto; 
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  
-  .menscard {
-    right: 23%; 
-    bottom: 35px;
-  }
-
-  .womencard {
-   
-    
-  }
-
+  .menscard,
+  .womencard,
   .shoescard {
-    left: 30%; 
-    top: 35px;
+    width: 100% !important;
+    margin: 0 auto 20px auto; /* Center the cards and add space between them */
   }
 
-  .mobilecard {
-    right: 1%; 
-    top: 35px;
+  .card-body {
+    text-align: center;
   }
 
-  .electroniccard {
-    left: 29%; 
-    top: 85px;
+  .card-title {
+    font-size: 1.5rem; /* Adjust font size */
   }
 
-  .labtopscard {
-    right: 23%;
-  }
-} */
-
-/* Small size 992 pixels  */
-@media (min-width : 1200px) {
-  .text{
-    height: 1500px;
-    /* font-weight: 400; */
-  }
-  .banner{
-    height: 1200px;
-    width: 120%;
-
+  .card-text {
+    font-size: 1rem; /* Adjust font size */
   }
 
-}
-
-
-
-
-
- @media screen and  (max-width:767px)  {
-  .npic{
-    height:130px;
-    width:120%;
+  .btn {
+    width: 100%; /* Make the button full-width */
+    margin-top: 10px;
   }
-  
+
+
 }
 
 
