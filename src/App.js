@@ -1,21 +1,13 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Footer from "./components/Footer";
-// import Home from "./components/Home";
-import Mens from "./components/Mens";
-import Womens from "./components/Womens";
-import Electronics from "./components/Electronics";
-import Tech from "./components/Tech";
 import Error from "./components/Error";
 import Sign from "./components/Sign";
-import Login from "./components/Login";
 import Checkout from "./components/Checkout";
 import MainHome from "./components/MainHome";
 import Shoes from "./components/Shoes";
-// import ReactCom from "./components/ReactCom";
-// import Protect from "./components/Protect";
-import { Navbar } from "react-bootstrap";
+import Detailpage from "./components/DetailsPage";
+
 
 function App() {
   return (
@@ -23,18 +15,9 @@ function App() {
       <BrowserRouter>
       {/* <Navbar/> */}
         <Routes>
-          {/* <Route path="/react" element={<ReactCom text={{name:"SHERRY",AGE:"20" }} data={"shaheryar data"} />} /> */}
           <Route path="/" element={<MainHome />} />
+          <Route path="/product-details/:shoesID" element={<Detailpage />} />
           <Route path="/sign" element={<Sign />} />
-          <Route path="/login" element={<Login />} />
-          {/* <Route path="/home" element={<Home />} /> */}
-          <Route path="/mens" element={<Mens/>} />
-          <Route path="/womens" element={<Womens/>} />
-          <Route
-            path="/electronics"
-            element={<Electronics />}
-          />
-          <Route path="/tech" element={<Tech />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/shoes" element={<Shoes />} />
           <Route path="*" element={<Error />} />

@@ -1,132 +1,111 @@
-const shoes =
- [
-      {
-        "id": 61,
-        "title": "Classic Sneakers",
-        "brand": "ABC Shoes",
-        "price": 59,
-        "color": "White",
-        "size": "US 8",
-        "image": "/Assets/M-CH-0100279.webp"
-      },
-      {
-        "id": 62,
-        "title": "Running Shoes",
-        "brand": "XYZ Footwear",
-        "price": 79,
-        "color": "Black/Red",
-        "size": "US 9",
-        "image": "/Assets/M-CH-0100286NAVY43.webp"
-      },
-      {
-        "id": 63,
-        "title": "Casual Loafers",
-        "brand": "DEF Shoes",
-        "price": 49,
-        "color": "Brown",
-        "size": "US 10",
-        "image": "/Assets/6-71-tr-white-original-imagtg2dkxphvyrd.webp"
-      },
-      {
-        "id": 64,
-        "title": "High-Top Sneakers",
-        "brand": "GHI Footwear",
-        "price": 69,
-        "color": "Black",
-        "size": "US 8.5",
-        "image": "/Assets/images (8).jpg"
-      },
-      {
-        "id": 65,
-        "title": "Leather Boots",
-        "brand": "JKL Shoes",
-        "price": 89,
-        "color": "Tan",
-        "size": "US 11",
-        "image": "/Assets/7-best-sneakers-for-men-under-2000-for-ultimate-comfort-and-style.webp"
-      },
-      {
-        "id": 66,
-        "title": "Slip-On Sandals",
-        "brand": "MNO Footwear",
-        "price": 39,
-        "color": "Blue",
-        "size": "US 7",
-        "image": "/Assets/Black-Pure-Foam-Sneakers-for-Men-1.jpg"
-      },
-      {
-        "id": 67,
-        "title": "Athletic Trainers",
-        "brand": "PQR Shoes",
-        "price": 69,
-        "color": "Gray/Orange",
-        "size": "US 9.5",
-        "image": "/Assets/M-CH-0100286NAVY43..webp"
-      },
-      {
-        "id": 68,
-        "title": "Canvas Sneakers",
-        "brand": "STU Footwear",
-        "price": 54,
-        "color": "Navy",
-        "size": "US 8",
-        "image": "/Assets/M-CH-0100286NAVY43..webp"
-      },
-      {
-        "id": 69,
-        "title": "Formal Oxfords",
-        "brand": "VWX Shoes",
-        "price": 79,
-        "color": "Black",
-        "size": "US 10.5",
-        "image": "/Assets/DSC_0124-Web.jpg"
-      },
-      {
-        "id": 70,
-        "title": "Espadrille Flats",
-        "brand": "YZA Footwear",
-        "price": 44,
-        "color": "Beige",
-        "size": "US 7.5",
-        "image": "/Assets/download (10).jpg"
-      },
-      {
-        "id": 71,
-        "title": "Classic Sneakers",
-        "brand": "ABC Shoes",
-        "price": 59,
-        "color": "White",
-        "size": "US 8",
-        "image": "/Assets/M-CH-0100279.webp"
-      },
-      {
-        "id": 72,
-        "title": "Running Shoes",
-        "brand": "XYZ Footwear",
-        "price": 79,
-        "color": "Black/Red",
-        "size": "US 9",
-        "image": "/Assets/M-CH-0100286NAVY43.webp"
-      },
-      {
-        "id": 73,
-        "title": "Casual Loafers",
-        "brand": "DEF Shoes",
-        "price": 49,
-        "color": "Brown",
-        "size": "US 10",
-        "image": "/Assets/6-71-tr-white-original-imagtg2dkxphvyrd.webp"
-      },
-      {
-        "id": 74,
-        "title": "High-Top Sneakers",
-        "brand": "GHI Footwear",
-        "price": 69,
-        "color": "Black",
-        "size": "US 8.5",
-        "image": "/Assets/images (8).jpg"
-      },
-    ]
-  
-    export default shoes
-  
+const shoes = [
+  {
+    id: 1,
+    brand: "4 Craft Photon Dust",
+    price: "3500",
+    size: "Uk:7.5 & Eur:42",
+    image: "/Assets/img10.jpg",
+    condition: "9.5/10",
+  },
+  {
+    id: 2,
+    brand: "Red High Track Red",
+    price: "6000",
+    color: "Black",
+    size: "Uk:7.5 & Eur:42",
+    image: "/Assets/Shoes/img4.jpg",
+    condition: "9.8/10", 
+  },
+  {
+    id: 3,
+    brand: "Aj1 Heritage",
+    price: "4000",
+    color: "Tan",
+    size: "Uk:7.5 & Eur:42",
+    image: "/Assets/Shoes/img5.jpg",
+    condition: "9.4/10", // Added condition
+  },
+  {
+    id: 4,
+    brand: "Blazer Jumbo",
+    price: "3500",
+    color: "Blue",
+    size: "Uk:7.5 & Eur:42",
+    image: "/Assets/Shoes/img6.jpg",
+    condition: "9.7/10", // Added condition
+  },
+  {
+    id: 5,
+    brand: "Aj1 Paris",
+    price: "3500",
+    color: "Gray/Orange",
+    size: "Uk:6.5 & Eur:40.5",
+    image: "/Assets/Shoes/img7.jpg",
+    condition: "9.5/10", // Added condition
+  },
+  {
+    id: 6,
+    brand: "Travis Scott",
+    price: "20,000",
+    color: "Navy",
+    size: "Uk:7.5 & Eur:42",
+    image: "/Assets/Shoes/img8.jpg",
+    condition: "10/10", 
+  },
+  {
+    id: 7,
+    brand: "Dunks Sail Multi-Camo",
+    price: "6000",
+    color: "Black/Red",
+    size: "Uk:7.5 & Eur:42",
+    image: "/Assets/Shoes/img12.jpg",
+    condition: "Deadstock", 
+  },
+  {
+    id: 8,
+    brand: "Air Jordan 4",
+    price: "3000",
+    color: "Brown",
+    size: "Uk:6 & Eur:40",
+    image: "/Assets/Shoes/img14.jpg",
+    condition: "9.5/10", 
+  },
+  {
+    id: 9,
+    brand: "Aj4 Lightning",
+    price: "12,000",
+    color: "Black",
+    size: "Uk:8.5 & Eur:43",
+    image: "/Assets/Shoes/img15.jpg",
+    condition: "9.3/10",
+  },
+  {
+    id: 10,
+    brand: "LV Virgil Beige Trainer",
+    price: "16,000",
+    color: "Black",
+    size: "Uk:8 & Eur:42",
+    image: "/Assets/Shoes/img18.jpg",
+    condition: "9.6/10", 
+  },
+  {
+    id: 11,
+    brand: "Sb Dunks Purple Pigeon",
+    price: "8000",
+    color: "Black",
+    size: "Uk:8.5 & Eur:43",
+    image: "/Assets/Shoes/img19.jpg",
+    condition: "9.8/10", 
+  },
+  {
+    id: 12,
+    brand: "Air Jordan 1",
+    price: "4900",
+    color: "Brown",
+    size: "US 10",
+    image: "/Assets/DSC_0124-Web.jpg",
+    condition: "7/10",
+  },
+];
+
+export default shoes;

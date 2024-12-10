@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="Container w-75">
             <div className="row">
               <div className="col-lg-3 col-md-6 col-12 mb-4">
-                <h3 className="text-warning fw-bold">COMPANY NAME</h3>
+                <h3 className="text-warning fw-bold">ShoeEnvy</h3>
                 <p className="fw-bold text-white">
                   Our products empower more than 3 billion people around the
                   world to share ideas and offer support.
@@ -22,11 +22,11 @@ const Footer = () => {
               <div className="col-lg-3 col-md-6 col-12 mb-4">
                 <h3 className="text-warning fw-bold">PRODUCTS</h3>
                 <ul className="list-unstyled">
-                  <li><em>Hoodies</em></li>
-                  <li><em>Shirts</em></li>
-                  <li><em>Womens</em></li>
-                  <li><em>Electronics</em></li>
-                  <li><em>Shoes</em></li>
+                <li>Sneakers</li>
+        <li>Running Shoes</li>
+        <li>High Tops</li>
+        <li>Casual Sneakers</li>
+        <li>Sports Sneakers</li>
                 </ul>
               </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
                   <br />
                   <i className="fa fa-phone"></i> 096669565
                   <br />
-                  <i className="fa fa-envelope"></i> Shaheryar@gmail.com
+                  <i className="fa fa-envelope"></i> ShoeEnvy@gmail.com
                   <br />
                   <i className="fa fa-help"></i> Any help
                 </p>
