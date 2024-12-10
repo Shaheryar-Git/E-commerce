@@ -12,7 +12,6 @@ const Detailpage = () => {
       <div className="container mt-5">
         <div className="product-content clearfix shadow-lg rounded p-4 text-dark mx-auto " style={{ backgroundColor: "#FFFFFF",maxWidth: "600px" }}>
           <div className="row d-flex justify-content-center align-items-center ">
-            {/* Product Image Section */}
             <div className="col-md-12 col-sm-12 d-flex justify-content-center">
               <div className="product-image">
                 <img
