@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="bg-gradient p-2 text-center bg-dark text-white ">
         <marquee className="mb-0 fs-6 fw-bolder ">🎉 Welcome To ShoeEnvy 🎉 Free Home Delivery</marquee>
       </div>
-      <nav className="navbar navbar-expand-lg p-3">
+      <nav className="navbar navbar-expand-lg p-3" style={{backgroundColor:"#4D4D4C", height:"100px"}}>
         <div className="container-fluid">
           {/* Logo */}
           <Link className="navbar-brand d-flex align-items-center ms-auto" to="/">
