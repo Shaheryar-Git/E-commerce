@@ -1,11 +1,11 @@
 const shoes = [
   {
     id: 1,
-    brand: "4 Craft Photon Dust",
-    price: "3500",
-    size: "Uk:7.5 & Eur:42",
-    image: "/Assets/img10.jpg",
-    condition: "9.5/10",
+    brand: "Nike Air Jordan 1 ",
+    price: "4000",
+    size: "Uk 7.5 & Eur 42",
+    image: "/Assets/Shoes/shoes8.jpg",
+    condition: "9.7/10",
   },
   {
     id: 2,
@@ -99,13 +99,29 @@ const shoes = [
   },
   {
     id: 12,
-    brand: "Air Jordan 1",
-    price: "4900",
-    color: "Brown",
-    size: "US 10",
-    image: "/Assets/DSC_0124-Web.jpg",
-    condition: "7/10",
+    brand: "Aj4 black cats",
+    price: "6500",
+    size: "Uk:8.5 & Eur:43",
+    image: "/Assets/Shoes/shoes5.jpg",
+    condition: "9/10",
   },
+  {
+    id: 13,
+    brand: "Nike AF1 Low",
+    price: "3500",
+    size: "Uk:6, Eur:40, Cm:25",
+    image: "/Assets/Shoes/shoes9.jpg",
+    condition: "9.7/10",
+  },
+  {
+    id: 14,
+    brand: " Nike Dunk Low",
+    price: "5500",
+    size: " Eur:40",
+    image: "/Assets/Shoes/shoes10.jpg",
+    condition: "9.6/10",
+  },
+  
 ];
 
 export default shoes;

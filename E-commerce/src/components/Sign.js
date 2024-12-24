@@ -9,7 +9,7 @@ const Sign = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [address, setAddress] = useState("");
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(true);
 
   const navigate = useNavigate();
   const [loaders, setLoaders] = useState(false);
@@ -70,6 +70,7 @@ const Sign = () => {
         });
 
         navigate("/");
+        window.location.reload();
       }
 
       result = await result.json();
@@ -194,12 +195,12 @@ const Sign = () => {
 
           {/* Right Column - Payment Method */}
           <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
-            <button
+            {/* <button
               className="btn btn-primary mb-4"
               onClick={() => setShowDropdown(!showDropdown)}
             >
               Payment Method
-            </button>
+            </button> */}
             {showDropdown && (
               <div className="bg-light p-3 rounded shadow">
                 <h3 className="fw-bold">Payment Method:</h3>
